@@ -16,13 +16,18 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/@mux/mux-player"></script>
   </head>
   <body>
     <main>
       <div class="glass"></div>
-      <img class="logo" src="./src/assets/axiom-title.webp" alt="logotipo-axiom" />
+      <img
+        class="logo"
+        src="./src/assets/axiom-title.webp"
+        alt="logotipo-axiom"
+      />
       <div class="video">
-        <iframe
+        <!-- <iframe
           src="https://www.youtube.com/embed/7Nki7Bz9uH4?rel=0"
           
           allowfullscreen
@@ -36,7 +41,24 @@
             web-share *;
           "
           referrerpolicy="strict-origin"
+        ></iframe> -->
+        <iframe
+          src="https://player.mux.com/nBCww73NADseo0058NPDaQztNhzyn9FFaHPG02MuP02byQ"
+          allow="
+            accelerometer;
+            gyroscope;
+            autoplay;
+            encrypted-media;
+            picture-in-picture;
+          "
+          allowfullscreen
         ></iframe>
+        <!-- <mux-player
+          playback-id="nBCww73NADseo0058NPDaQztNhzyn9FFaHPG02MuP02byQ"
+          metadata-video-title="Meu vídeo"
+          metadata-viewer-user-id="user-id-exemplo"
+          stream-type="on-demand"
+        ></mux-player> -->
       </div>
       <button type="button">Adquira agora!!!</button>
     </main>
