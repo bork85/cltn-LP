@@ -61,7 +61,7 @@ button {
     width: 100%;
     height: 100%;
     background-color: black;
-    opacity: 0.5;
+    opacity: 0.75;
     z-index: 1;
 }
 
@@ -84,7 +84,6 @@ footer {
     box-shadow: 0px 5px 0px 0px rgba(0,0,0,1);
 -webkit-box-shadow: 0px 5px 0px 0px rgba(0,0,0,1);
 -moz-box-shadow: 0px 5px 0px 0px rgba(0,0,0,1);
-
 
 }
 .redes {
@@ -131,7 +130,7 @@ footer {
 }
 .section-garantias {
     width: 100%;
-    max-width: 712px;
+    max-width: 900px;
     border: none;
     border-radius: 12px;
     box-shadow: 0px 0px 10px 2px #000000aa;
@@ -139,15 +138,15 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    z-index: 30;
+    justify-content: space-between;
     gap: 2rem;
+    z-index: 30;
 }
 .img-selo {
     width: 200px;
 }
 .garantias {
+    max-width: 600px;
     font-size: 16px;
     color: #fafafa;     
     list-style: square;
@@ -155,12 +154,13 @@ footer {
     text-align: justify;
 }
 .sec1 {
-    z-index: 30;
+    z-index: 4;
     border-radius: 2rem;
     box-shadow: .3rem .3rem .3rem .3rem #0a0a0aaa;
+    background-color: #000000aa;
 }
 .img{
-    z-index: 30;
+    z-index: 3;
     width: 900px;
     height: auto;
     border-radius: 1rem;
