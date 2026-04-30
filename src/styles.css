@@ -53,7 +53,7 @@ button {
     padding: 0.75rem;
     width: 100%;
     max-width: 700px;
-    background-color: forestgreen;
+    background-color: #228b22;
     color: white;
     font-weight: bold;
     z-index: 10;
@@ -129,15 +129,51 @@ footer {
     z-index: 30;
     transform: translateY(-3rem);
 
-    iframe {
-        width: 100%;
-        height: 100%;
-        border: none;
-        border-radius: 1rem;
-        box-shadow: 0px 0px 10px 2px #000000aa;
-        aspect-ratio: 136/73
+    media-controller {
+        position: relative;
+
+        media-play-button {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(2.0);
+            z-index: 50;
+            border-radius: 50%;
+            border: none;
+            font-size: 50px;
+            background-color: #228b2266;
+            --media-icon-color: white;
+
+            &:hover {
+                cursor: pointer;
+                background-color: #228b22;
+                transform: translate(-50%, -50%) scale(2.2);
+                transition: all 0.3s ease-in-out;
+                border: none;
+                box-shadow: inset 0px 0px 5px 1px #9bff9b;
+            }
+        }
+        media-fullscreen-button {
+            position: absolute;
+            top:0;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            background-color: transparent;
+            --media-icon-color: white;
+
+            &:hover {
+                cursor: pointer;
+                transform: translate(-10%, 10%) scale(1.2);
+                transition: all 0.3s ease-in-out;
+                
+            }
+        }
     }
 }
+
 .section-garantias {
     width: 100%;
     max-width: 900px;
