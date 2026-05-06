@@ -95,6 +95,11 @@ footer {
     box-shadow: 0px 5px 0px 0px rgba(0,0,0,1);
     -webkit-box-shadow: 0px 5px 0px 0px rgba(0,0,0,1);
     -moz-box-shadow: 0px 5px 0px 0px rgba(0,0,0,1);
+
+    a {
+        text-decoration: none;
+        color: #f3f3f0;
+    }
 }
 .redes {
     position: relative;
@@ -173,6 +178,19 @@ footer {
         }
     }
 }
+.tarja {
+    width: 12%;
+    z-index: 30;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    background-color: red;
+    padding: .1rem;
+    border-radius: .5rem;
+    font-size: 12px;
+    position: absolute;
+    top: 50%
+}
 
 .section-garantias {
     width: 100%;
@@ -208,6 +226,7 @@ footer {
     max-width: 900px;
 }
 .img-conteudo-curso, .img-garantias{
+    position: relative;
     z-index: 3;
     width: 100%;
     max-width: 900px;
@@ -227,5 +246,17 @@ footer {
     .img-garantias {
         width: 100%;
         content: url("./assets/garantias-port.jpeg");
+    }
+    media-play-button {
+        transform: translate(-50%, -50%) scale(1.0);
+        &:hover {
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+    }
+    media-fullscreen-button {
+        transform: translate(-10%, 10%) scale(1.0);
+        &:hover {
+            transform: translate(-50%, -50%) scale(1.1);
+        }
     }
 }
